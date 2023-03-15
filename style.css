@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    border: none;
+}
+
+/*this is header*/
+header {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(158, 210, 230, 0.459);
+    padding: 10px;
+}
+
+.user {
+    margin: 10px;
+}
+
+.head-center {
+    font-size: small;
+}
+
+/*this is navbar*/
+nav {
+    background-color: rgba(158, 210, 230);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+
+.logo img {
+    height: 38px;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: black;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: blue;
+}
+
+/*this is top*/
+.top h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.top-image {
+    display: flex;
+    justify-content: center;
+}
+
+.top-image img {
+    width: 600px;
+    height: 350px;
+    border-radius: 150px;
+}
+
+/*this is booking part*/
+.booking {
+    width: fit-content;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.class-btn {
+    background-color: rgba(158, 210, 230, 0.459);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.class-btn a {
+    text-decoration: none;
+    padding: 10px 40px;
+    color: black;
+    border-radius: 15px;
+}
+
+.class-btn a:hover {
+    background-color: blue;
+    color: white;
+}
+
+/*this is menu*/
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.menu-item {
+    margin: 20px;
+}
+
+.search-btn input {
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/*this is txt*/
+.txt {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.txt h3 {
+    letter-spacing: 10px;
+    font-weight: 10;
+}
+
+.txt p {
+    opacity: 0.6;
+}
+
+.txt h1 {
+    margin: 10px 0;
+}
+
+/*this is about*/
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-txt,
+.about-img {
+    width: 50%;
+}
+
+.about-txt div {
+    padding: 20px;
+}
+
+.about-txt p {
+    opacity: 0.6;
+}
+
+.about-img img {
+    width: 170px;
+    height: 250px;
+    border-radius: 100px;
+}
+
+.img1 img {
+    position: relative;
+    transform: translate(40px, 80px);
+}
+
+.img2 img {
+    position: absolute;
+}
+
+.img3 img {
+    position: absolute;
+    transform: translate(60px, 100px);
+}
+
+/*this is contant*/
+.contant {
+    margin-top: 100px;
+}
+
+.contant h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card img {
+    width: 200px;
+    height: 300px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+    position: relative;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: bounce 3s infinite alternate-reverse;
+    position: relative;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate(80px, -90px);
+    }
+
+    to {
+        transform: translate(80px, -140px);
+    }
+}
+/*this is footer*/
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.number {
+    color: orange;
+}
+
+.links {
+    width: 200px;
+    margin: 20px;
+}
+
+.links p,
+li,
+.links h2 {
+    margin: 10px;
+}
+
+.links i {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(230, 225, 225);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ol {
+    list-style: none;
+}
+
+.last {
+    display: flex;
+    justify-content: space-around;
+}
+
+.last p {
+    margin: 20px;
+}
+
+/*this is small screen style */
+@media screen and (max-width: 450px) {
+
+    .top-image img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .class-btn,
+    a {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .about-txt,
+    .about-img {
+        width: 100%;
+    }
+
+    .about-img img{
+        width: 100px;
+        height: 150px;
+    }
+
+    .footer {
+        display: block;
+        width: 100%;
+    }
+    .sub2box{
+        width: 298px;
+    }
+
+    .links {
+        margin: 10px auto;
+    }
+
+}
